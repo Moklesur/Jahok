@@ -5,21 +5,10 @@ wp-admin
 wp-includes
 wp-config.php
 index.php
-index.php-old
-wp-content/w3tc-config
 wp-content/uploads
-wp-content/uploads-old
 wp-content/themes/twentynineteen
-wp-content/themes/twentyseventeen
-wp-content/themes/twentysixteen
-wp-content/themes-old
 
 wp-content/upgrade
-wp-content/advanced-cache.php
-wp-content/updraftplus
 wp-content/updraft
 wp-content/debug.log
 wp-content/plugins/
-wp-content/plugins/bring-back-toolkit
-wp-content/plugins-old
-!/wp-content/themes/norcanna/js/functions.js
