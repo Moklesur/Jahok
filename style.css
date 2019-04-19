@@ -61,9 +61,62 @@ h5 {
 .container {
 	max-width: 1170px;
 }
+/*--------------------------------------------------------------
+# Top Header
+--------------------------------------------------------------*/
+.top-header a{
+	padding: 11px;
+	font-size: 12px;
+	font-weight: 400;
+	color: #131529;
+	display: inline-block;
+}
+
+.top-header ul{
+	border-bottom: 1px solid #e1e1e6 ;
+}
+
+.top-header .social-links li {
+	display: inline-block;
+	padding: 11px 11px 11px 10px;
+	border-left: 1px solid #e1e1e6;
+}
+
+.top-header .social-links a {
+	font-size: inherit;
+
+}
+
+.top-header .social-links li:last-child a {
+	border-right: 1px solid #e1e1e6;
+}
+/*--------------------------------------------------------------
+# Menu
+--------------------------------------------------------------*/
 .main-menu {
 	padding: 0 15px;
 }
+.navbar-brand {
+	padding: 0;
+}
+.navbar-expand-lg .navbar-nav li a.nav-link {
+	padding: 2px 15px;
+	display: block;
+	color: #131529;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.navbar-expand-lg .navbar-nav li:last-child a.nav-link {
+	padding-right: 0;
+}
+
+.navbar-nav li a:hover {
+	color: #ed1575;
+}
+/*--------------------------------------------------------------
+# Post
+--------------------------------------------------------------*/
 .boxes {
 	padding: 30px 15px;
 	background: #fff;
@@ -91,24 +144,8 @@ h5 {
 	bottom: 25px;
 	font-size: 18px;
 }
-
-
 .post-content-wrap {
 	padding-left: 15px;
-}
-/*--------------------------------------------------------------
-# Menu
---------------------------------------------------------------*/
-.navbar-expand-lg .navbar-nav li a.nav-link {
-	padding: 22px 16px;
-	display: block;
-	color: #131529;
-	font-weight: 600;
-	text-transform: uppercase;
-}
-
-.navbar-nav li a:hover {
-	color: #ed1575;
 }
 
 /*--------------------------------------------------------------

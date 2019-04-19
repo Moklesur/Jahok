@@ -4,7 +4,7 @@
 wp-admin
 wp-includes
 wp-config.php
-!index.php
+index.php
 index.php-old
 wp-content/w3tc-config
 wp-content/uploads
