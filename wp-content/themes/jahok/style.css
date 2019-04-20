@@ -72,10 +72,6 @@ h5 {
 	display: inline-block;
 }
 
-.top-header ul{
-	border-bottom: 1px solid #e1e1e6 ;
-}
-
 .top-header .social-links li {
 	display: inline-block;
 	padding: 11px 11px 11px 10px;
@@ -83,11 +79,12 @@ h5 {
 }
 
 .top-header .social-links a {
+	padding: 0;
 	font-size: inherit;
 
 }
 
-.top-header .social-links li:last-child a {
+.top-header .social-links li:last-child {
 	border-right: 1px solid #e1e1e6;
 }
 /*--------------------------------------------------------------
