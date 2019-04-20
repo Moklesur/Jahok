@@ -8,7 +8,9 @@ index.php
 wp-content/uploads
 wp-content/themes/twentynineteen
 
+
+
 wp-content/upgrade
 wp-content/updraft
 wp-content/debug.log
-wp-content/plugins/
+wp-content/plugins

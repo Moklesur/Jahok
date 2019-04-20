@@ -25,44 +25,7 @@
     <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'jahok' ); ?></a>
 
     <header id="masthead" class="site-header">
-        <div class="top-header container">
-            <div class="row">
-                <div class="col-12 text-right d-lg-block d-none">
-                    <div class="top-nav d-inline-block text-uppercase">
-                        <ul class="list-inline m-0">
-                            <li class="list-inline-item">
-                                <a href="#">contact</a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#">ADVERTISE</a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#">login</a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#">Join</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="social-links d-inline-block">
-                        <ul class="list-inline m-0">
-                            <li>
-                                <a href="#"><i class="icofont-facebook"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="icofont-linkedin"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="icofont-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="icofont-pinterest"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+
         <nav class="navbar navbar-expand-lg container main-menu">
             <div class="navbar-brand">
                 <?php
