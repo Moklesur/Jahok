@@ -59,11 +59,6 @@
                     'walker'			=> new WP_Bootstrap_Navwalker()
                 )
             ); ?>
-            <form class="form-inline my-2 my-lg-0 position-relative d-none">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn my-2 my-sm-0 search-button" type="submit"><i class="icofont-search-2"></i></button>
-            </form>
-
         </nav>
     </header><!-- #masthead -->
 

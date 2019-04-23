@@ -99,7 +99,7 @@ h5 {
 .navbar-expand-lg .navbar-nav li a.nav-link {
 	padding: 2px 15px;
 	display: block;
-	color: #fff;
+	color: #000;
 	font-weight: 600;
 	text-transform: uppercase;
 }
@@ -114,6 +114,9 @@ h5 {
 /*--------------------------------------------------------------
 # Post
 --------------------------------------------------------------*/
+.mt-30 {
+	margin-top: 30px;
+}
 .boxes {
 	padding: 30px 15px;
 	background: #fff;
@@ -230,11 +233,6 @@ h5 {
 --------------------------------------------------------------*/
 .sticky {
 	display: block;
-}
-
-.post,
-.page {
-	margin: 0 0 1.5em;
 }
 
 .updated:not(.published) {
@@ -372,129 +370,4 @@ object {
 
 .gallery-caption {
 	display: block;
-}
-
-
-/*--------------------------------------------------------------
-## my css
---------------------------------------------------------------*/
-.mb-20{
-	margin-bottom: 20px;
-}
-.mb-30{
-	margin-bottom: 30px;
-}
-header.site-header{
-	margin-bottom: 30px;
-	background: #131529;
-	color: #fff;
-	padding: 20px 0;
-}
-
-.theme-color{
-	color: #ee1d7a;
-}
-
-h5{
-	font-size: 14px;
-}
-.blog-area a{
-	text-decoration: none;
-}
-.meta-content{
-	display: block;
-	margin-bottom: 10px;
-}
-.blog-area .blog-post , .blog-details .single-post{
-	background: #fff;
-	padding: 10px;
-	border: 1px solid #e1e1e6;
-}
-.widget-area {
-	padding: 30px 20px;
-	background: #fff;
-	border: 1px solid #e1e1e6;
-}
-.widget ul{
-	padding: 0;
-	margin: 0;
-	list-style: none;
-}
-.widget ul li>a{
-	text-decoration: none;
-}
-
-.comment-respond label {
-	display: block;
-}
-h3.comment-reply-title{
-	font-size: 18px;
-}
-.form-submit input[type='submit'] , .widget .search-submit{
-	background: #000000;
-	border: none;
-	box-shadow: none;
-	outline: none;
-	padding: 15px 40px;
-	color: #fff;
-	transition: 2s;
-}
-.form-submit input[type='submit']:hover ,  .widget .search-submit:hover{
-	background: #ee1d7a;
-	transition: 2s;
-}
-.comment-form-comment textarea:focus , .comment-form-comment textarea:hover{
-	outline-color:#ee1d7a ;
-	border-color:  inherit;
-}
-
-input:focus , input:hover{
-	outline-color:#ee1d7a ;
-	border-color:  inherit;
-}
-
-.widget_search label{
-	display: block;
-	width: 100%;
-}
-.widget_search input[type='search']{
-	width: 100%;
-	box-shadow: none;
-	outline: none;
-	padding: 10px 10px;
-}
-.widget .search-submit {
-	width: 100%;
-	text-transform: uppercase;
-}
-
-footer.site-footer{
-	margin-top: 30px;
-	min-height: 200px;
-	background: black;
-	padding: 100px 0px;
-	color: #fff;
-}
-.social-links{
-	margin: 20px 0;
-}
-.social-links li a{
-	text-decoration: none;
-}
-.social-links li i{
-	font-size: 40px;
-}
-.social-links li i:hover{
-	color: #fff;
-}
-
-footer .site-info a{
-	text-decoration: none;
-}
-footer .site-info a:hover{
-	color: #fff;
-}
-.menu-footer-menu-container ul#menu-footer-menu-1 li{
-	float: left;
-	display: inline-block;
 }
