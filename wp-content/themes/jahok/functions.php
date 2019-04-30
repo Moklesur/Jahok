@@ -117,6 +117,36 @@ function jahok_widgets_init() {
 }
 add_action( 'widgets_init', 'jahok_widgets_init' );
 
+
+/**
+ * Custom Elementor widgets
+ */
+function jahok_register_elementor_widgets() {
+
+    if ( defined('ELEMENTOR_PATH') && class_exists('Elementor\Widget_Base') ) {
+        require get_template_directory() . '/plugin/category-post.php';
+    }
+}
+add_action( 'elementor/widgets/widgets_registered', 'jahok_register_elementor_widgets' );
+
+
+/**
+ * @param $elements_manager
+ * elementor Category Name
+ */
+function preferred_magazine_elementor_widget_categories( $elements_manager ) {
+
+    $elements_manager->add_category(
+        'Jahok',
+        array(
+            'title' => __( 'Jahok Widgets', 'jahok' ),
+            'icon' => 'fa fa-plug',
+        )
+    );
+
+}
+add_action( 'elementor/elements/categories_registered', 'preferred_magazine_elementor_widget_categories' );
+
 /**
  * Enqueue scripts and styles.
  */
