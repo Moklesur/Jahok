@@ -14,7 +14,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 # Common
 --------------------------------------------------------------*/
 body{
-	background-color: #f0f1f5;
+	background-color: #fff;
 	font-weight: 400;
 	font-family: 'Poppins', sans-serif;
 }
@@ -36,6 +36,11 @@ h1, h2, h3, h4, h5, h6 {
 	color: #131529;
 	font-weight: 700;
 	font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
+.entry-meta a{
+	color: #131529;
 }
 
 h1 {
@@ -60,6 +65,39 @@ h5 {
 
 .container {
 	max-width: 1170px;
+}
+.site-header,
+.site-footer{
+	background: #f0f1f5;
+	padding: 5px 0;
+}
+
+.site-footer {
+	padding: 30px 0;
+}
+a{
+	text-decoration: none;
+}
+.social-links a {
+	border-radius: 50%;
+	display: block;
+	height: 60px;
+	width: 60px;
+	background: #fff;
+	line-height: 60px;
+	text-align: center;
+	font-size: 22px;
+	margin-bottom: 5px;
+}
+.social-links a:hover {
+	background: #ee1d7a;
+	color: #fff;
+}
+.site-info {
+	margin-top: 30px;
+}
+.site-info p{
+	margin-bottom: 0;
 }
 /*--------------------------------------------------------------
 # Top Header
@@ -114,6 +152,11 @@ h5 {
 /*--------------------------------------------------------------
 # Post
 --------------------------------------------------------------*/
+.entry-meta a{
+	font-size: 14px;
+	margin-bottom: 10px;
+	margin-right: 5px;
+}
 .mt-30 {
 	margin-top: 30px;
 }
@@ -148,6 +191,48 @@ h5 {
 	padding-left: 15px;
 }
 
+.post-grid > .thumb-border-right,
+.single-posts .post-thumbnail{
+	-ms-flex: 100%;
+	flex: 100%;
+	max-width: 100%;
+	width: 100%;
+	padding: 0;
+}
+.post-grid > .thumb-border-right:after{
+	display: none;
+}
+.post-grid {
+	background: #fff;
+	-webkit-box-shadow: 0 0 25px 0 rgba(60, 60, 60, 0.08);
+	box-shadow: 0 0 25px 0 rgba(60, 60, 60, 0.08);
+}
+.post-grid .entry-header {
+	padding: 20px 20px 30px;
+}
+.post-grid .entry-title {
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+.single-posts h1{
+	font-size: 30px;
+	margin: 0;
+}
+.single-posts .entry-meta {
+	margin-bottom: 20px;
+}
+.edit-link {
+	display: block;
+}
+
+.edit-link a.post-edit-link{
+	border: 1px solid #000;
+	padding: 3px 9px;
+	margin-top: 5px;
+}
+.single-posts .post-thumbnail{
+	margin-bottom: 20px;
+}
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -216,6 +301,33 @@ h5 {
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
+.sidebar-right h2 {
+	font-size: 17px;
+	margin-bottom: 15px;
+}
+.sidebar-right ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.sidebar-right .widget{
+	background: #fff;
+	padding: 25px;
+	border: 1px solid #f0f1f5;
+}
+
+.sidebar-right li{
+	padding: 5px 0;
+}
+
+.sidebar-right a{
+	color: #131529;
+	display: block;
+}
+.sidebar-right a:hover{
+	color: #ee1d7a;
+}
 .widget {
 	margin: 0 0 1.5em;
 	/* Make sure select elements fit in widgets. */
@@ -253,12 +365,56 @@ h5 {
 /*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/
+.comments-area {
+	margin-top: 40px;
+}
+.comments-area  a{
+	color: #131529;
+}
+
+.comments-area a:hover{
+	color:#ee1d7a
+}
+.comments-area textarea,
+.comments-area  input[type=text],
+.comments-area  input[type=email],
+.comments-area  input[type=url]{
+	width: 100%;
+}
 .comment-content a {
 	word-wrap: break-word;
 }
 
 .bypostauthor {
 	display: block;
+}
+
+input[type=submit],
+button,
+.btn{
+	background: #ee1d7a;
+	border: 0;
+	padding: 9px 20px;
+	color: #fff;
+	font-weight: 700;
+	font-size: 12px;
+	letter-spacing: .7px;
+	text-transform: uppercase;
+}
+input[type=submit]:hover,
+button:hover,
+.btn:hover {
+	background: #000;
+}
+textarea,
+input[type=password],
+input[type=text],
+input[type=search],
+input[type=email],
+input[type=url]{
+	border: 1px solid #f0f1f5;
+	padding: 7px 15px;
+	width: 100%;
 }
 
 /*--------------------------------------------------------------

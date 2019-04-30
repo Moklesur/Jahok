@@ -6,58 +6,27 @@
  *
  * @package jahok
  */
-$class[] = 'boxes';
+$class[] = 'col-lg-4 col-sm-6 col-12 mt-30 blog-posts';
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class( $class ); ?>>
-    <div class="row">
+    <div class="post-grid">
         <?php jahok_post_thumbnail(); ?>
-        <div class="col-lg-9 col-12">
-            <div class="post-content-wrap">
-                <div class="entry-header">
-                    <?php
-                    if ( is_singular() ) :
-                        the_title( '<h1 class="entry-title">', '</h1>' );
-                    else :
-                        the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-                    endif;
+        <div class="entry-header">
+            <?php
 
-                    if ( 'post' === get_post_type() ) :
-                        ?>
-                        <div class="entry-meta d-none">
-                            <?php
-                            //jahok_posted_on();
-                            //jahok_posted_by();
-                            ?>
-                        </div><!-- .entry-meta -->
-                    <?php endif; ?>
-                </div><!-- .entry-header -->
-                <div class="entry-content">
+            if ( 'post' === get_post_type() ) :
+                ?>
+                <div class="entry-meta">
                     <?php
-                    the_content( sprintf(
-                        wp_kses(
-                        /* translators: %s: Name of current post. Only visible to screen readers */
-                            __( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'jahok' ),
-                            array(
-                                'span' => array(
-                                    'class' => array(),
-                                ),
-                            )
-                        ),
-                        get_the_title()
-                    ) );
-
-                    wp_link_pages( array(
-                        'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'jahok' ),
-                        'after'  => '</div>',
-                    ) );
+                    jahok_posted_on();
+                    //jahok_posted_by();
+                    jahok_entry_footer();
                     ?>
-                </div><!-- .entry-content -->
-                <div class="entry-footer">
-                    <a href="<?php echo esc_url( get_the_permalink() ); ?>"><?php esc_html_e( 'Visit Website', 'jahok' ); ?></a>
-                    <?php //jahok_entry_footer(); ?>
-                </div><!-- .entry-footer -->
-            </div>
-        </div>
+                </div><!-- .entry-meta -->
+            <?php endif;
+            the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+            ?>
+        </div><!-- .entry-header -->
     </div>
 </article><!-- #post-<?php the_ID(); ?> -->
